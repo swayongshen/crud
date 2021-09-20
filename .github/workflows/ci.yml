@@ -1,75 +1,48 @@
-name: Main
+name: CI
 
-on: [push]
+on: [ push ]
 
 jobs:
-  test:
+  rspec:
     runs-on: ubuntu-latest
+      container:
+        image: ruby:2.6.5
 
-    # If you need DB like PostgreSQL, Redis then define service below.
-    # https://github.com/actions/example-services/tree/master/.github/workflows
-    services:
-      postgres:
-        image: postgres:10.8
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: ""
-          POSTGRES_DB: crud_test
-        ports:
-          - 5432:5432
-        # needed because the postgres container does not provide a healthcheck
-        # tmpfs makes DB faster by using RAM
-        options: >-
-          --mount type=tmpfs,destination=/var/lib/postgresql/data
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+      services:
+        postgres:
+          image: postgres:10.8
+          env:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: ""
+            POSTGRES_DB: crud_test
+          ports:
+            - 5432:5432
+          # needed because the postgres container does not provide a healthcheck
+          options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
-    # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix
-    strategy:
-      fail-fast: false
-      matrix:
-        # [n] - where the n is a number of parallel jobs you want to run your tests on.
-        # Use a higher number if you have slow tests to split them between more parallel jobs.
-        # Remember to update the value of the `ci_node_index` below to (0..n-1).
-        ci_node_total: [8]
-        # Indexes for parallel jobs (starting from zero).
-        # E.g. use [0, 1] for 2 parallel jobs, [0, 1, 2] for 3 parallel jobs, etc.
-        ci_node_index: [0, 1, 2, 3, 4, 5, 6, 7]
+      steps:
+        - uses: actions/checkout@v1
 
-    env:
-      RAILS_ENV: test
-      GEMFILE_RUBY_VERSION: 3.0.1
-      PGHOST: localhost
-      PGUSER: postgres
-      # Rails verifies the time zone in DB is the same as the time zone of the Rails app
-      TZ: "Asia/Singapore"
+        - name: Gem cache
+          id: cache-bundle
+          uses: actions/cache@v1
+          with:
+            path: vendor/bundle
+            key: bundle-${{ hashFiles('**/Gemfile.lock') }}
 
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          # runs 'bundle install' and caches installed gems automatically
-          bundler-cache: true
-
-      - name: Create DB
-        run: |
-          bin/rails db:prepare
-      - name: Run tests
-        env:
-          KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC: ${{ secrets.KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC }}
-          KNAPSACK_PRO_CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
-          KNAPSACK_PRO_CI_NODE_INDEX: ${{ matrix.ci_node_index }}
-          KNAPSACK_PRO_LOG_LEVEL: info
-          # if you use Knapsack Pro Queue Mode you must set below env variable
-          # to be able to retry CI build and run previously recorded tests
-          # https://github.com/KnapsackPro/knapsack_pro-ruby#knapsack_pro_fixed_queue_split-remember-queue-split-on-retry-ci-node
-          KNAPSACK_PRO_FIXED_QUEUE_SPLIT: true
-          # RSpec split test files by test examples feature - it's optional
-          # https://knapsackpro.com/faq/question/how-to-split-slow-rspec-test-files-by-test-examples-by-individual-it
-          KNAPSACK_PRO_RSPEC_SPLIT_BY_TEST_EXAMPLES: true
-        run: |
-          bundle exec rake knapsack_pro:queue:rspec
+        - name: Bundle install
+          env:
+            RAILS_ENV: test
+          run: |
+            gem install bundler
+            bundle install --jobs 4 --retry 3 --path vendor/bundle
+        -
+        - name: Setup DB, Run tests
+          env:
+            PGHOST: postgres
+            PGUSER: postgres
+            PGPORT: ${{ job.services.postgres.ports[5432] }}
+            RAILS_ENV: test
+          run: |
+            bin/rails db:create db:schema:load
+            bundle exec rspec
