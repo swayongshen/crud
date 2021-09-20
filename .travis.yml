@@ -21,7 +21,7 @@ deploy:
   access_key_id: ${AWS_ACCESS_KEY_ID_DEVELOPMENT}
   secret_access_key: ${AWS_SECRET_ACCESS_KEY_DEVELOPMENT}
   function_name: "crud"
-  region: "us-east-1"
+  region: "us-east-2"
   role: "arn:aws:iam::739451191364:role/Admin"
   runtime: "ruby3.0.1"
   handler_name: "handler"
