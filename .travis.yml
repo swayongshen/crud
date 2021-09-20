@@ -18,6 +18,7 @@ install:
     
 #test
 script:
+    - echo ${SERVICE_PATH}
     - cd ${SERVICE_PATH}
     - serverless deploy -s ${STAGE_NAME}
     - cd -
