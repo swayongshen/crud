@@ -7,8 +7,7 @@ deploy_service_job: &DEPLOY_SERVICE_JOB
       - ${SERVICE_PATH}/node_modules
 
 install:
-    - gem install bundler
-    - bundle install
+    - bundle install --jobs=3 --retry=3
     - bundle exec rake db:create
     - bundle exec rake db:migrate
     - bundle exec rspec
@@ -41,3 +40,8 @@ jobs:
         - STAGE_NAME=dev
         - *DEVELOPMENT_ENV
 
+
+services:
+  - postgresql
+addons:
+  postgresql: "9.6"
