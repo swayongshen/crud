@@ -15,6 +15,8 @@ service: crud
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
+custom:
+  stage: ${opt:stage, self:provider.stage}
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -22,7 +24,7 @@ frameworkVersion: '2'
 
 provider:
   name: aws
-  runtime: ruby2.7
+  runtime: ruby3.0.1
   lambdaHashingVersion: 20201221
 
 # you can overwrite defaults here
