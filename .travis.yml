@@ -4,7 +4,6 @@ deploy_service_job: &DEPLOY_SERVICE_JOB
   cache:
     directories:
       - node_modules
-      - ${SERVICE_PATH}/node_modules
 
 install:
     - bundle install --jobs=3 --retry=3
@@ -15,9 +14,7 @@ install:
     - node -v
     - npm install -g serverless
     - travis_retry npm install
-    - cd ${SERVICE_PATH}
-    - travis_retry npm install
-    - cd -
+    
 #test
 script:
     - cd ${SERVICE_PATH}
