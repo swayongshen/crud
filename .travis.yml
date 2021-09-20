@@ -16,12 +16,6 @@ install:
     - travis_retry npm install
     - pwd
     
-#test
-script:
-    - echo ${SERVICE_PATH}
-    - cd ${SERVICE_PATH}
-    - serverless deploy -s ${STAGE_NAME}
-    - cd -
     
 environments:
     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID_DEVELOPMENT}
