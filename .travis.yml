@@ -14,16 +14,12 @@ install:
     - node -v
     - npm install -g serverless
     - travis_retry npm install
-    - pwd
     
-    
-environments:
-    - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID_DEVELOPMENT}
-    - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY_DEVELOPMENT}
-
 
 deploy:
   provider: lambda
+  access_key_id: ${AWS_ACCESS_KEY_ID_DEVELOPMENT}
+  secret_access_key: ${AWS_SECRET_ACCESS_KEY_DEVELOPMENT}
   function_name: "lambda-test"
   region: "us-east-1"
   role: "arn:aws:iam::739451191364:role/Admin"
