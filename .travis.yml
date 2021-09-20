@@ -24,20 +24,17 @@ script:
     - cd -
     
 environments:
-- &DEVELOPMENT_ENV
     - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID_DEVELOPMENT}
     - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY_DEVELOPMENT}
 
-jobs:
-  include:
-    # develop branch deploys to the 'dev' stage
-    - <<: *DEPLOY_SERVICE_JOB
-      name: "Deploy CRUD"
-      if: type = push AND branch = master
-      env:
-        - SERVICE_PATH="crud"
-        - STAGE_NAME=dev
-        - *DEVELOPMENT_ENV
+
+deploy:
+  provider: lambda
+  function_name: "lambda-test"
+  region: "us-east-1"
+  role: "arn:aws:iam::739451191364:role/Admin"
+  runtime: "ruby3.0.1"
+  handler_name: "handler"
 
 
 services:
