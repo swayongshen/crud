@@ -6,10 +6,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import MyNavbar from './Navbar'
 import {Button} from "react-bootstrap";
-import AddQuoteModal from "./AddQuoteModal";
+import WriteQuoteModal from "./WriteQuoteModal";
 
 function Home() {
     const [quotes, setQuotes] = useState([]);
+    const [editModal, setEditModal] = useState(<></>);
 
     const loadQuotes = () => {
         const url = "api/v1/quotes/";
@@ -45,15 +46,21 @@ function Home() {
         fetch(url, {
             method: "delete",
         })
-            .then((data) => {
-                if (data.ok) {
+            .then(response => {
+                if (response.status === 204) {
                     reloadQuotes();
-                    return data.json();
+                } else {
+                    throw new Error("Network error.");
                 }
-                throw new Error("Network error.");
             })
             .catch((err) => message.error("Error: " + err));
     };
+
+    const generateEditModal = (id, currTitle) => {
+        const editModal = <WriteQuoteModal isEdit={true} id={id} currTitle={currTitle} reloadQuotes={reloadQuotes} setEditModal={setEditModal}/>
+        setEditModal(() => <></>)
+        setEditModal(() => editModal);
+    }
 
 
     useEffect(() => {
@@ -75,11 +82,14 @@ function Home() {
             title: "",
             key: "action",
             render: (_text, record) => (
-                <Popconfirm title="Are you sure to delete this quote?" onConfirm={() => deleteQuote(record.id)} okText="Yes" cancelText="No">
-                    <a href="#" type="danger">
-                        Delete{" "}
-                    </a>
-                </Popconfirm>
+                <>
+                    <Popconfirm title="Are you sure to delete this quote?" onConfirm={() => deleteQuote(record.id)} okText="Yes" cancelText="No">
+                        <a href="#" type="danger">
+                            Delete{" "}
+                        </a>
+                    </Popconfirm><br/>
+                    <a onClick={() => generateEditModal(record.id, record.title)}>Edit</a>
+                </>
             ),
         },
     ]
@@ -92,7 +102,9 @@ function Home() {
             <Row className="justify-content-md-center">
                 <Table className="table" dataSource={quotes} columns={columns}/>
             </Row>
-            <AddQuoteModal reloadQuotes={reloadQuotes}/>
+            <WriteQuoteModal reloadQuotes={reloadQuotes}/>
+            {/*<WriteQuoteModal isEdit={true} id={1} currTitle={"Sibei noob"} reloadQuotes={reloadQuotes}/>*/}
+            {editModal}
         </Container>
     )
 }

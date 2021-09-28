@@ -18,7 +18,7 @@ class Api::V1::QuotesController < ApplicationController
     @quote = Quote.new(quote_params)
 
     if @quote.save
-      render json: @quote, status: :created, location: @quote
+      render json: @quote, status: :created, location: api_v1_quote_url(@quote)
     else
       render json: @quote.errors, status: :unprocessable_entity
     end
