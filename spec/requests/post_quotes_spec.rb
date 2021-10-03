@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "post a quote route", :type => :request do
   before do
-    post '/quotes', params: { quote: { title: "This is a test quote" }}
+    post '/api/v1/quotes', params: { quote: { title: "This is a test quote" }}
   end
 
   it 'returns the quote' do

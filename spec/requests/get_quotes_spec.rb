@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-# Generates 20 random quotes and check that GET /quotes returns 20 quotes.
+# Generates 20 random quotes and check that GET /api/v1/quotes returns 20 quotes.
 describe "get all quotes route", :type => :request do
   let!(:quotes) { FactoryBot.create_list(:random_quote, 20) }
-  before { get '/quotes' }
+  before { get '/api/v1/quotes' }
 
   it 'returns all questions' do
     expect(JSON.parse(response.body).size).to eq(20)

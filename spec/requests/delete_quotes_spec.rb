@@ -9,16 +9,16 @@ describe "delete quotes route" do
 
   it 'should delete the quote' do
     # Check that the quotes that were created are present.
-    get "/quotes/"
+    get "/api/v1/quotes/"
     expect(response.status).to eq(200)
     expect(JSON.parse(response.body)).to eq([YAML.load(@first_quote.to_json),YAML.load(@second_quote.to_json),])
 
     # Delete the first quote
-    delete "/quotes/#{@first_quote.id}"
+    delete "/api/v1/quotes/#{@first_quote.id}"
     expect(response.status).to eq(204)
 
     # Should be left with second quote
-    get "/quotes/"
+    get "/api/v1/quotes/"
     expect(response.status).to eq(200)
     expect(JSON.parse(response.body)).to eq([YAML.load(@second_quote.to_json),])
   end
