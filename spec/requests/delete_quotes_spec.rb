@@ -7,6 +7,7 @@ describe "delete quotes route" do
     @second_quote = create(:random_quote)
   end
 
+  # Yea
   it 'should delete the quote' do
     # Check that the quotes that were created are present.
     get "/api/v1/quotes/"

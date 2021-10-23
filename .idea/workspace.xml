@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee80500-8f7b-4650-8e0f-986b0c0eadb2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/crud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/crud.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/delete_quotes_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/delete_quotes_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -356,6 +361,8 @@
       <workItem from="1632823282870" duration="4663000" />
       <workItem from="1633273091557" duration="2482000" />
       <workItem from="1633275673225" duration="45000" />
+      <workItem from="1634972876376" duration="412000" />
+      <workItem from="1634973323566" duration="573000" />
     </task>
     <servers />
   </component>
@@ -364,12 +371,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/crud@delete_quotes_route_should_delete_the_quote.rcov" NAME="delete quotes route should delete the quote Coverage Results" MODIFIED="1633274019019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
-    <SUITE FILE_PATH="coverage/crud@All_specs_in_requests__crud.rcov" NAME="All specs in requests: crud Coverage Results" MODIFIED="1633275186021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
+    <SUITE FILE_PATH="coverage/crud@All_specs_in_requests__crud.rcov" NAME="All specs in requests: crud Coverage Results" MODIFIED="1634973824548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@delete_quotes_route.rcov" NAME="delete quotes route Coverage Results" MODIFIED="1633274417875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@PUT__quotes__id_updates_a_quote.rcov" NAME="PUT /quotes/:id updates a quote Coverage Results" MODIFIED="1632113154403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@post_a_quote_route_returns_the_quote.rcov" NAME="post a quote route returns the quote Coverage Results" MODIFIED="1632112500620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@post_a_quote_route.rcov" NAME="post a quote route Coverage Results" MODIFIED="1632112520401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
-    <SUITE FILE_PATH="coverage/crud@delete_quotes_spec.rcov" NAME="delete_quotes_spec Coverage Results" MODIFIED="1633275111266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
+    <SUITE FILE_PATH="coverage/crud@delete_quotes_spec.rcov" NAME="delete_quotes_spec Coverage Results" MODIFIED="1634973817965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@get_all_quotes_route.rcov" NAME="get all quotes route Coverage Results" MODIFIED="1632112185534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@PUT__quotes__id.rcov" NAME="PUT /quotes/:id Coverage Results" MODIFIED="1632113158099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@All_specs_in_spec__crud.rcov" NAME="All specs in spec: crud Coverage Results" MODIFIED="1632827321068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
