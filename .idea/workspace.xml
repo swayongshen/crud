@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee80500-8f7b-4650-8e0f-986b0c0eadb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/crud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/crud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/cs3219-b/bin/_deploy" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cs3219-b/bin/_bootstrap" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Gemfile.lock" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spec/requests/quotes_spec.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cs3219-b/bin/_setup" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cs3219-b/Gemfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spec/models/quote_spec.rb" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Gemfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/cs3219-b/bin/setup" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/spec/helpers/api/v1/quotes_helper_spec.rb" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -37,17 +53,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cs3219-b" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cs3219-b" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/javascript/packs" />
       <recent name="$PROJECT_DIR$/app/javascript" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.quotes_controller_spec">
-    <configuration name="All specs in requests: crud" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunManager" selected="RSpec.All specs in spec: crud">
+    <configuration name="All specs in spec: crud" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="crud" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -59,15 +78,15 @@
         <env name="RAILS_ENV" value="test" />
         <env name="JRUBY_OPTS" value="-X+O" />
       </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" IGNORE_RCOVRT="true" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
         <COVERAGE_PATTERN ENABLED="true">
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/spec/requests" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/spec" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
@@ -83,7 +102,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="delete quotes route should delete the quote" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+    <configuration name="Quote" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="crud" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -95,20 +114,20 @@
         <env name="RAILS_ENV" value="test" />
         <env name="JRUBY_OPTS" value="-X+O" />
       </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" IGNORE_RCOVRT="true" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
         <COVERAGE_PATTERN ENABLED="true">
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/requests/delete_quotes_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/quote_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="delete quotes route should delete the quote" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Quote" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -119,7 +138,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="delete quotes route" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+    <configuration name="Quotes" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="crud" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -131,20 +150,20 @@
         <env name="RAILS_ENV" value="test" />
         <env name="JRUBY_OPTS" value="-X+O" />
       </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" IGNORE_RCOVRT="true" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
         <COVERAGE_PATTERN ENABLED="true">
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/requests/delete_quotes_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/requests/quotes_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="delete quotes route" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Quotes" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -330,11 +349,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.All specs in spec: crud" />
+        <item itemvalue="RSpec.Quotes" />
+        <item itemvalue="RSpec.Quote" />
         <item itemvalue="RSpec.quotes_controller_spec" />
         <item itemvalue="RSpec.delete_quotes_spec" />
-        <item itemvalue="RSpec.All specs in requests: crud" />
-        <item itemvalue="RSpec.delete quotes route" />
-        <item itemvalue="RSpec.delete quotes route should delete the quote" />
       </list>
     </recent_temporary>
   </component>
@@ -358,7 +377,8 @@
       <workItem from="1633273091557" duration="2482000" />
       <workItem from="1633275673225" duration="45000" />
       <workItem from="1634972876376" duration="412000" />
-      <workItem from="1634973323566" duration="931000" />
+      <workItem from="1634973323566" duration="3188000" />
+      <workItem from="1634976989446" duration="2956000" />
     </task>
     <servers />
   </component>
@@ -375,18 +395,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/crud@delete_quotes_route_should_delete_the_quote.rcov" NAME="delete quotes route should delete the quote Coverage Results" MODIFIED="1633274019019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
-    <SUITE FILE_PATH="coverage/crud@All_specs_in_requests__crud.rcov" NAME="All specs in requests: crud Coverage Results" MODIFIED="1634973824548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@delete_quotes_route.rcov" NAME="delete quotes route Coverage Results" MODIFIED="1633274417875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
+    <SUITE FILE_PATH="coverage/crud@Quote.rcov" NAME="Quote Coverage Results" MODIFIED="1634974504832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
+    <SUITE FILE_PATH="coverage/crud@Quotes.rcov" NAME="Quotes Coverage Results" MODIFIED="1634974515020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
+    <SUITE FILE_PATH="coverage/crud@quotes_controller_spec.rcov" NAME="quotes_controller_spec Coverage Results" MODIFIED="1634974186614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
+    <SUITE FILE_PATH="coverage/crud@get_all_quotes_route.rcov" NAME="get all quotes route Coverage Results" MODIFIED="1632112185534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
+    <SUITE FILE_PATH="coverage/crud@All_specs_in_requests__crud.rcov" NAME="All specs in requests: crud Coverage Results" MODIFIED="1634973824548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@PUT__quotes__id_updates_a_quote.rcov" NAME="PUT /quotes/:id updates a quote Coverage Results" MODIFIED="1632113154403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@post_a_quote_route_returns_the_quote.rcov" NAME="post a quote route returns the quote Coverage Results" MODIFIED="1632112500620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@post_a_quote_route.rcov" NAME="post a quote route Coverage Results" MODIFIED="1632112520401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@delete_quotes_spec.rcov" NAME="delete_quotes_spec Coverage Results" MODIFIED="1634974122126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
-    <SUITE FILE_PATH="coverage/crud@quotes_controller_spec.rcov" NAME="quotes_controller_spec Coverage Results" MODIFIED="1634974186614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
-    <SUITE FILE_PATH="coverage/crud@get_all_quotes_route.rcov" NAME="get all quotes route Coverage Results" MODIFIED="1632112185534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@PUT__quotes__id.rcov" NAME="PUT /quotes/:id Coverage Results" MODIFIED="1632113158099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
-    <SUITE FILE_PATH="coverage/crud@All_specs_in_spec__crud.rcov" NAME="All specs in spec: crud Coverage Results" MODIFIED="1632827321068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
+    <SUITE FILE_PATH="coverage/crud@All_specs_in_spec__crud.rcov" NAME="All specs in spec: crud Coverage Results" MODIFIED="1634980546397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
   </component>
 </project>
