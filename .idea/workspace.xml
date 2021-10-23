@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee80500-8f7b-4650-8e0f-986b0c0eadb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A019952J_B1_B2_B4.docx" beforeDir="false" afterPath="$PROJECT_DIR$/A019952J_B1_B2_B4.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A019952J_B1_B2_B4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/A019952J_B1_B2_B4.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,7 +379,7 @@
       <workItem from="1634972876376" duration="412000" />
       <workItem from="1634973323566" duration="3188000" />
       <workItem from="1634976989446" duration="2956000" />
-      <workItem from="1634980901370" duration="771000" />
+      <workItem from="1634980901370" duration="1573000" />
     </task>
     <servers />
   </component>
@@ -407,6 +411,6 @@
     <SUITE FILE_PATH="coverage/crud@post_a_quote_route.rcov" NAME="post a quote route Coverage Results" MODIFIED="1632112520401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@delete_quotes_spec.rcov" NAME="delete_quotes_spec Coverage Results" MODIFIED="1634974122126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
     <SUITE FILE_PATH="coverage/crud@PUT__quotes__id.rcov" NAME="PUT /quotes/:id Coverage Results" MODIFIED="1632113158099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
-    <SUITE FILE_PATH="coverage/crud@All_specs_in_spec__crud.rcov" NAME="All specs in spec: crud Coverage Results" MODIFIED="1634980546397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
+    <SUITE FILE_PATH="coverage/crud@All_specs_in_spec__crud.rcov" NAME="All specs in spec: crud Coverage Results" MODIFIED="1634981963134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
   </component>
 </project>
