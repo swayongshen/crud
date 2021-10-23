@@ -64,3 +64,5 @@ group :development, :test do
 end
 
 gem 'faker'
+
+gem "lamby", "~> 2.0", require: false
