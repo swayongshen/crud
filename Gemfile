@@ -66,4 +66,10 @@ end
 
 gem 'faker'
 
+<<<<<<< Updated upstream
 gem "lamby", "~> 2.0", require: false
+=======
+gem 'devise'
+gem 'devise-jwt'
+gem 'rack-cors'
+>>>>>>> Stashed changes
