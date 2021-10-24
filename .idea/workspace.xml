@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ee80500-8f7b-4650-8e0f-986b0c0eadb2" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/config/webpack/environment.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack/environment.js" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/app/models/jwt_denylist.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/cors.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/custom_failure.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/crud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/crud.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories.rb" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Ruby File" />
         <option value="ERB File" />
         <option value="JavaScript File" />
+        <option value="Ruby File" />
       </list>
     </option>
   </component>
@@ -46,10 +61,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cs3219-b" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Wright/adroit-worksorder-module" />
+>>>>>>> Stashed changes
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -372,6 +392,7 @@
       <workItem from="1632823282870" duration="4663000" />
       <workItem from="1633273091557" duration="2482000" />
       <workItem from="1633275673225" duration="45000" />
+<<<<<<< Updated upstream
       <workItem from="1634972876376" duration="412000" />
       <workItem from="1634973323566" duration="3188000" />
       <workItem from="1634976989446" duration="2956000" />
@@ -379,12 +400,18 @@
       <workItem from="1634992195494" duration="71000" />
       <workItem from="1634993230557" duration="1163000" />
       <workItem from="1634994623452" duration="1022000" />
+=======
+      <workItem from="1633443358663" duration="2947000" />
+      <workItem from="1633499281762" duration="2810000" />
+      <workItem from="1634532534771" duration="362000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< Updated upstream
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -410,6 +437,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+>>>>>>> Stashed changes
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/crud@delete_quotes_route_should_delete_the_quote.rcov" NAME="delete quotes route should delete the quote Coverage Results" MODIFIED="1633274019019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="crud" />
